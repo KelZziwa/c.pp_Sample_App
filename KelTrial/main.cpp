@@ -28,7 +28,7 @@ int main()
     cout << "Water Management   : " << percentage[6] << "%" << endl;
     cout << "Buildings          : " << percentage[7] << "%" << endl;
 
-    // Sum of perccentages
+    // Sum of percentages
     int total_percentage = ( percentage[0] + percentage[1] + percentage[2] + percentage[3] +
                              percentage[4] + percentage[5] + percentage[6] + percentage[7] );
     cout << "=====================++=======================\n" << endl;
