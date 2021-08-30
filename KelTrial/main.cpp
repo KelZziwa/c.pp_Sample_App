@@ -1,6 +1,6 @@
 /*
     PROJECT TITLE:          TRIAL QUESTIONS
-    AUTHOR:                 KELVIN STEPHEN ZZIWA.
+    AUTHOR:                 KELVIN STEPHEN ZZIWA
 */
 
 
