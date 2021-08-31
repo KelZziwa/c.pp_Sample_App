@@ -1,0 +1,6 @@
+
+*.exe
+*.depend
+KelTrial/main.cpp
+KelTrial/obj/Debug/main.o
+KelTrial/main.cpp
