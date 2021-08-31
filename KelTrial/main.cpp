@@ -271,7 +271,6 @@ int main()
             cout << "\n==============================================" << endl;
             cout << "Add a negative percentage onto a variable to archive the required Percentage (85%): ";
             goto BELOW;
-
         }
     }
 
