@@ -1,6 +1,6 @@
 /*
-    PROJECT TITLE:          TRIAL QUESTIONS
-    AUTHOR:                 KELVIN STEPHEN ZZIWA.
+    PROJECT TITLE:          COURSE WORK
+    AUTHOR:                 KELVIN STEPHEN ZZIWA
 */
 
 
@@ -12,6 +12,7 @@ int main()
 {
     cout << "==============================================" << endl;
     cout << "CARBON CALCULATOR PROGRAM TO TEST AND REDUCE GREEN\nGREEN HOUSE GASES (GHG) IN THE CITY BY 15%" << endl;
+
     // Declaring and Initializing arrays (percentages for major contributors)
     int percentage [8] {19, 17, 15, 14, 10, 10, 10, 5};
 
@@ -47,10 +48,24 @@ int main()
     cout << "7. Water Management   : " << percentage[6] << "%" << endl;
     cout << "8. Buildings          : " << percentage[7] << "%" << endl;
     cout << "____________";
+    goto STEP_1;
+
+    /*  This prints out each time the percentage is below 85%;   */
+    BELOW:cout << "\nPlease choose a variable to add a negative to: (and press enter)" << endl;
+    cout << "=====================++=======================" << endl;
+    cout << "1. Industry           : " << percentage[0] << "%" << endl;
+    cout << "2. De-forestation     : " << percentage[1] << "%" << endl;
+    cout << "3. Power & Energy     : " << percentage[2] << "%" << endl;
+    cout << "4. Agriculture        : " << percentage[3] << "%" << endl;
+    cout << "5. Transportation     : " << percentage[4] << "%" << endl;
+    cout << "6. Waste              : " << percentage[5] << "%" << endl;
+    cout << "7. Water Management   : " << percentage[6] << "%" << endl;
+    cout << "8. Buildings          : " << percentage[7] << "%" << endl;
+    cout << "____________";
 
     /*  This stores integers 1 - 8, representing the major variables that
         contribute to GHG in the city                                       */
-    int variable {0};
+    STEP_1:int variable {0};
     cin >> variable;
 
     do {
@@ -71,7 +86,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -91,7 +106,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -111,7 +126,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -131,7 +146,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%  by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -151,7 +166,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -171,7 +186,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -191,7 +206,7 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
@@ -211,21 +226,24 @@ int main()
             cout << "6. Waste              : " << percentage[5] << "%" << endl;
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
-            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is still greater than Desired Percentage        : 85% by " << total_percentage - 85 << "%" << endl;
             if(total_percentage > 85)
                 goto LOOP;
             break;
         default:
             cout << "Invalid Input, try again: " << endl;
             return 0;
+
         }
 
     }
 
     /*  Once the percentage of Green House Gases drops to 85% or drops by
-        15%, then the Switch condition takes effect and the loop ends       */
+        15%, then the while condition takes effect and the loop ends       */
     while(total_percentage > 85);
     {
+        if(total_percentage == 85)
+        {
             cout << "\nThe desired percentages are:" << endl;
             cout << "=====================++=======================" << endl;
             cout << "1. Industry           : " << percentage[0] << "%" << endl;
@@ -237,7 +255,24 @@ int main()
             cout << "7. Water Management   : " << percentage[6] << "%" << endl;
             cout << "8. Buildings          : " << percentage[7] << "%" << endl;
             cout << "Total Percentage      : " << total_percentage << "% is equal to the Desired Percentage        : 85%" << endl;
-
+        }
+        else
+        {
+            cout << "\nThe desired percentages are:" << endl;
+            cout << "=====================++=======================" << endl;
+            cout << "1. Industry           : " << percentage[0] << "%" << endl;
+            cout << "2. De-forestation     : " << percentage[1] << "%" << endl;
+            cout << "3. Power & Energy     : " << percentage[2] << "%" << endl;
+            cout << "4. Agriculture        : " << percentage[3] << "%" << endl;
+            cout << "5. Transportation     : " << percentage[4] << "%" << endl;
+            cout << "6. Waste              : " << percentage[5] << "%" << endl;
+            cout << "7. Water Management   : " << percentage[6] << "%" << endl;
+            cout << "8. Buildings          : " << percentage[7] << "%" << endl;
+            cout << "Total Percentage      : " << total_percentage << "% is less than the desired percentage,       85% by " << 85 - total_percentage << "%" << endl;
+            cout << "\n==============================================" << endl;
+            cout << "Add a negative percentage onto a variable to archive the required Percentage (85%): ";
+            goto BELOW;
+        }
     }
 
 
